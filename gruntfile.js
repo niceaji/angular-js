@@ -20,5 +20,5 @@ module.exports=function(grunt){
 		grunt.log.write('tree-json... ').ok();
 	});
 
-	grunt.registerTast('default','',[]);
+	grunt.registerTask('default','',[]);
 };
