@@ -9,15 +9,14 @@ module.exports=function(grunt){
 			options:{
 				base:'.'
 			},
-			src:['**/*','!node_modules']
-
+			src:['index.html', 'src/**/*']
 		}
 	});
 
 	grunt.loadNpmTasks('grunt-gh-pages');
 
-	grunt.registerTask('default','',function(){
+	// grunt.registerTask('default','',function(){
 
 		
-	});
+	// });
 };
