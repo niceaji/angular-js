@@ -9,14 +9,16 @@ module.exports=function(grunt){
 			options:{
 				base:'.'
 			},
-			src:['index.html', 'src/**/*']
-		}
+			src:['index.html', 'src/**/*', 'lib/*']
+		},
 	});
 
 	grunt.loadNpmTasks('grunt-gh-pages');
 
-	// grunt.registerTask('default','',function(){
+	grunt.registerTask('tree-json','',function(){
+		fs.writeFileSync ('lib/tree.json', JSON.stringify(treejson('src')) );
+		grunt.log.write('tree-json... ').ok();
+	});
 
-		
-	// });
+	grunt.registerTast('default','',[]);
 };
