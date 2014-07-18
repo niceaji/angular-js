@@ -1,0 +1,24 @@
+<!DOCTYPE html >
+<html lang="kr" ng-app>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.20/angular.min.js"></script>
+</head>
+<body ng-app="">
+	
+	<!-- controller가 없음 -->
+	<div ng-init="members=[
+						{id:'daum',name:'다음'},
+						{id:'kakao',name:'카카오'},
+						{id:'twitter',name:'트위터'},
+						{id:'facebook',name:'페이스북'}]"></div>
+
+	<ul>
+		<li ng-repeat="user in members">
+			{{user.id}} - {{user.name}}
+		</li>
+	</ul>
+
+</body>
+</html>

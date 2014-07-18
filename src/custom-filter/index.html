@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.20/angular.min.js"></script>
+	<script src="app.js"></script>
+</head>
+<body ng-app="app">
+	
+	<div ng-controller="MemberListCtrl as member">
+
+
+		<ul>
+			<li ng-repeat="user in member.list ">
+				{{user.id | reverse }} - {{user.name | reverse  }} 
+			</li>
+		</ul>
+	</div>
+</body>
+</html>

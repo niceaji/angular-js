@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="kr" ng-app>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.20/angular.min.js"></script>
+	<script src="app.js"></script>
+</head>
+<body>
+
+	<ul ng-controller="MemberListCtrl">
+		<li ng-repeat="user in members | orderBy:'id' ">
+			{{user.id}} - {{user.name}}
+		</li>
+	</ul>
+
+	
+</body>
+</html>
