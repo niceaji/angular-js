@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.20/angular.min.js"></script>
+	<script src="app.js"></script>
+</head>
+<body ng-app="controllerAsExample">
+	
+	<div ng-controller="MemberListCtrl as member">
+		<button type="button" ng-click="member.add(user)">add</button>
+		<ul>
+			<li ng-repeat="user in member.list">
+				{{user.id}} - {{user.name}} 
+				<button type="button" ng-click="member.who(user)">who?</button>
+				<button type="button" ng-click="member.delete(user)">delete</button>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
