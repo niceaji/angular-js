@@ -1,1 +1,11 @@
-.strike{text-decoration: line-through}
+body {
+	margin:20px;
+}
+.container {
+	background: url(../img/angularjs.jpg) right 0 no-repeat;
+	background-size: 200px;
+}
+
+.strike{
+	text-decoration: line-through;
+}

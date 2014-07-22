@@ -9,7 +9,7 @@ module.exports=function(grunt){
 			options:{
 				base:'.'
 			},
-			src:['index.html', 'src/**/*', 'lib/*']
+			src:['index.html', 'src/**/*', 'lib/*', 'img/*']
 		},
 	});
 
