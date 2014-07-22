@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.15/angular.min.js"></script>
+	<script src="app.js"></script>
+	<style>
+	p {font-size:200%;}
+	.active{color:red;font-weight: bold;}
+	</style>
+</head>
+<body ng-app="app">
+
+<div ng-controller="MainCtrl">
+	<p ng-class="{active : timeId !=null}">{{ count }}</p>
+	<button type="button" ng-click="start()">start</button>
+	<button type="button" ng-click="stop()">stop</button>
+</div>
+
+	
+</body>
+</html>

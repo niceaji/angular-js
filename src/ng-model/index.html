@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.15/angular.min.js"></script>
+	<script src="app.js"></script>
+</head>
+<body ng-app="">
+
+<div >
+	Hello <input ng-model='name'> <hr/>
+	<span ng-bind="name"></span> <br/>
+	<span ng:bind="name"></span> <br/>
+	<span ng_bind="name"></span> <br/>
+	<span data-ng-bind="name"></span> <br/>
+	<span x-ng-bind="name"></span> <br/>
+</div>
+	
+</body>
+</html>
