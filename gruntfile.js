@@ -20,5 +20,6 @@ module.exports=function(grunt){
 		grunt.log.write('tree-json... ').ok();
 	});
 
-	grunt.registerTask('default','',[]);
+
+	grunt.registerTask('default','', ['tree-json','gh-pages'] );
 };
